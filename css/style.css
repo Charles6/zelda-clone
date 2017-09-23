@@ -7,9 +7,22 @@ body{
 }
 
 #gameContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+#board{
   position: relative;
   background-color: black;
   width: 800px;
+  height: 600px;
+}
+
+#info{
+  width: 200px;
+  background-color: black;
   height: 600px;
 }
 
@@ -29,6 +42,20 @@ body{
   left: 0px;
   width: 48px;
   height: 48px;
+  border: solid blue 1px;
+  position: absolute;
+  z-index: 2;
+  color: blue;
+  text-align: center;
+  font-size:20px;
+  line-height: 48px;
+}
+
+.enemyCSS{
+  top: 0px;
+  left: 0px;
+  width: 48px;
+  height: 48px;
   border: solid red 1px;
   position: absolute;
   z-index: 1;
@@ -36,4 +63,17 @@ body{
   text-align: center;
   font-size:20px;
   line-height: 48px;
+}
+
+.statCSS{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: dashed darkgreen 1px;
+  padding: 5px;
+  color: darkgreen; 
+}
+
+#invId{
+  word-wrap: break-word;
 }

@@ -15,7 +15,7 @@ const makeGrid = () => {
 const makeRow = () => {
   var gRow = document.createElement("div");
   gRow.className = "gridRow";
-  document.getElementById("gameContainer").appendChild(gRow);
+  document.getElementById("board").appendChild(gRow);
 };
 
 const makeColumn = () => {
@@ -23,5 +23,7 @@ const makeColumn = () => {
   node.className = "square";
   document.getElementsByClassName("gridRow")[x].appendChild(node);
 };
+
+
 
 makeGrid();
