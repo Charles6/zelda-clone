@@ -3,6 +3,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: sans-serif;
 }
 
 #gameContainer{
@@ -31,4 +32,8 @@ body{
   border: solid red 1px;
   position: absolute;
   z-index: 1;
+  color: red;
+  text-align: center;
+  font-size:20px;
+  line-height: 48px;
 }
