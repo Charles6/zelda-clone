@@ -31,30 +31,30 @@ const moveEntity = (entity,id) => {
 
   //document.removeEventListener("keydown", keyboardBindings());
 
-  document.addEventListener('keydown', function(){
+  document.addEventListener('keydown', function(event){
     if (event.key == "ArrowUp"){
       if(entity.posY > 0){
         entity.posY -= 50;
         document.getElementById(id).style.top = entity.posY + "px";
-      }; 
+      };
     };
     if (event.key == "ArrowRight"){
       if(entity.posX < 750){
         entity.posX += 50;
         document.getElementById(id).style.left = entity.posX + "px";
-      }; 
+      };
     };
     if (event.key == "ArrowDown"){
       if(entity.posY < 550){
         entity.posY += 50;
         document.getElementById(id).style.top = entity.posY + "px";
-      }; 
+      };
     };
     if (event.key == "ArrowLeft"){
       if(entity.posX > 0){
         entity.posX -= 50;
         document.getElementById(id).style.left = entity.posX + "px";
-      }; 
+      };
     };
     sameLoc();
   });
@@ -65,25 +65,25 @@ const moveEntity = (entity,id) => {
 //       if(entity.posY > 0){
 //         entity.posY -= 50;
 //         document.getElementById(id).style.top = entity.posY + "px";
-//       }; 
+//       };
 //     };
 //     if (event.key == "ArrowRight"){
 //       if(entity.posX < 750){
 //         entity.posX += 50;
 //         document.getElementById(id).style.left = entity.posX + "px";
-//       }; 
+//       };
 //     };
 //     if (event.key == "ArrowDown"){
 //       if(entity.posY < 550){
 //         entity.posY += 50;
 //         document.getElementById(id).style.top = entity.posY + "px";
-//       }; 
+//       };
 //     };
 //     if (event.key == "ArrowLeft"){
 //       if(entity.posX > 0){
 //         entity.posX -= 50;
 //         document.getElementById(id).style.left = entity.posX + "px";
-//       }; 
+//       };
 //     };
 // }
 
